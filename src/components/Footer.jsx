@@ -1,66 +1,46 @@
 import React from "react";
-import {Bg1,text1 } from "../style/Color";
+import { Bg1, text1 } from "../style/Color";
+
 const Footer = () => {
   return (
-    <footer className={`mt-8 p-4 ${Bg1} ${text1} `}>
+    <footer className="bg-gray-800 text-white p-4">
       <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div>
-            <h3 className="text-lg font-bold mb-2">About Us</h3>
-            <p>Your company description goes here.</p>
+        <div className="flex flex-col md:flex-row md:m-10 justify-between ">
+          <div className="mb-8 md:mb-0 md:mr-4">
+            <p className="text-6xl font-bold">YOURS™</p>
+          </div>
+
+          <div className="mb-8 md:mb-0">
+            <p className="text-2xl font-bold mb-4 md:mb-8">YOURS™</p>
+            <p>Email: reachus@yours.house</p>
+            <p>Phone: +91 9880775551</p>
+          </div>
+
+          <div className="mb-8 md:mb-0">
+            <p className="text-2xl font-bold mb-4 md:mb-8">Quick Links</p>
+            <p>News & Media</p>
+            <p>Partner with us</p>
           </div>
 
           <div>
-            <h3 className="text-lg font-bold mb-2">Contact Us</h3>
-            <p>
-              Email: info@example.com
-              <br />
-              Phone: (123) 456-7890
-            </p>
+            <p className="text-2xl font-bold mb-4 md:mb-8">Others</p>
+            <p>Privacy Policy</p>
+            <p>Enquire Now</p>
           </div>
+        </div>
 
-          <div>
-            <h3 className="text-lg font-bold mb-2">Follow Us</h3>
-            <ul className="list-none p-0">
-              <li>
-                <a
-                  href="https://www.instagram.com/accounts/login/"
-                  className="text-white hover:text-gray-300"
-                >
-                  Instagram
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.facebook.com/"
-                  className="text-white hover:text-gray-300"
-                >
-                  Facebook
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://twitter.com/i/flow/login"
-                  className="text-white hover:text-gray-300"
-                >
-                  Twitter
-                </a>
-              </li>
-            </ul>
-          </div>
+        <div className="border-t border-white my-8"></div>
 
-          <div>
-            <h3 className="text-lg font-bold mb-2">Subscribe</h3>
-            <p>Subscribe to our newsletter for updates.</p>
-            <input
-              type="email"
-              placeholder="Enter your email"
-              className="w-full mt-2 p-2 rounded"
-            />
-            <button className="bg-blue-500 text-white p-2 mt-2 rounded">
-              Subscribe
-            </button>
-          </div>
+        <div className="mt-8">
+          <p className="text-sm">
+            Copyrights 2023, RERA no-PRM/KA/RERA/1251/310/AG/221029/003182
+          </p>
+        </div>
+
+        <div className="flex flex-col md:flex-row mt-8">
+          <p className="text-sm mb-4 md:mr-8">
+            Insta | Facebook | Twitter
+          </p>
         </div>
       </div>
     </footer>
